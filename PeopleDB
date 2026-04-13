@@ -1,0 +1,24 @@
+#ifndef PEOPLEDB_H
+#define PEOPLEDB_H
+
+#include "People.h"
+#include "BinarySearchTree.h"
+#include <fstream>
+
+class PeopleDB {
+private:
+    BinarySearchTree<People> db;
+
+public:
+    PeopleDB(string filename);
+
+    void addPerson(const People& p);
+    void removePerson(const People& p);
+    bool searchPerson(const People& p);
+    void modifyPerson(const People& oldP, const People& newP);
+
+    void displayPreorder(void visit(People&));
+    void displayInorder(void visit(People&));
+};
+
+#endif
