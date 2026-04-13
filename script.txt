@@ -1,0 +1,151 @@
+Welcome to People Database System
+Please enter the file that contains initial people list:
+studentDB1.txt
+
+The initial database built from the input file is displayed by its original order:
+
+Jason 8 6 1992
+Mary 4 5 1993
+Alice 6 2 1990
+John 7 4 1995
+Joe 1 10 1998
+Jim 8 4 2000
+Cat 12 2 1999
+
+---
+
+Please enter your option
+
+1. add a new person
+2. remove a person
+3. modify the database
+4. search for a person
+5. display the database
+6. display sorted database
+7. quit and save
+
+--> 1
+
+To add, enter name and birthday (month day year):
+Wendy 8 8 1989
+
+Add another one? y
+Ken 4 14 1987
+
+Add another one? y
+Apple 8 7 1956
+
+Add another one? n
+
+---
+
+Please enter your option
+--> 5
+
+Jason 8 6 1992
+Alice 6 2 1990
+Cat 12 2 1999
+Apple 8 7 1956
+Mary 4 5 1993
+John 7 4 1995
+Joe 1 10 1998
+Jim 8 4 2000
+Ken 4 14 1987
+Wendy 8 8 1989
+
+---
+
+Please enter your option
+--> 2
+
+To remove, enter person’s name and birthday:
+James 1 3 1987
+
+Cannot find this person.
+
+Remove another one? y
+
+To remove, enter person’s name and birthday:
+Mary 4 5 1993
+
+This person has been removed.
+
+Remove another one? n
+
+---
+
+Please enter your option
+--> 5
+
+Jason 8 6 1992
+Alice 6 2 1990
+Cat 12 2 1999
+Apple 8 7 1956
+Wendy 8 8 1989
+John 7 4 1995
+Joe 1 10 1998
+Jim 8 4 2000
+Ken 4 14 1987
+
+---
+
+Please enter your option
+--> 3
+
+To modify, enter person’s name and birthday:
+Jim 8 4 2000
+
+Found this person. Removing old entry...
+
+Enter new data:
+James 8 4 2000
+
+Modification complete.
+
+Continue modifying? n
+
+---
+
+Please enter your option
+--> 4
+
+To search, enter person’s name and birthday:
+Jim 8 4 2000
+
+Not found.
+
+Search again? y
+
+To search, enter person’s name and birthday:
+James 8 4 2000
+
+Person found:
+James 8 4 2000
+
+Search again? n
+
+---
+
+Please enter your option
+--> 6
+
+Alice 6 2 1990
+Apple 8 7 1956
+Cat 12 2 1999
+James 8 4 2000
+Jason 8 6 1992
+Joe 1 10 1998
+John 7 4 1995
+Ken 4 14 1987
+Wendy 8 8 1989
+
+---
+
+Please enter your option
+--> 7
+
+Saving database to file: studentDB2.txt
+
+Database saved successfully.
+
+Goodbye!
