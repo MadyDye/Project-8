@@ -1,0 +1,29 @@
+#ifndef PEOPLE_H
+#define PEOPLE_H
+
+#include <iostream>
+#include "Date.h"
+using namespace std;
+
+class People {
+private:
+    string name;
+    Date birthday;
+
+public:
+    People(string n = "", Date d = Date());
+
+    void setName(string n);
+    void setBirthday(Date d);
+
+    string getName() const;
+    Date getBirthday() const;
+
+    bool operator==(const People& other) const;
+    bool operator<(const People& other) const;
+
+    friend istream& operator>>(istream& in, People& p);
+    friend ostream& operator<<(ostream& out, const People& p);
+};
+
+#endif
