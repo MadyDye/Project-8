@@ -1,0 +1,9 @@
+void toScreen(People& p) {
+    cout << p << endl;
+}
+
+ofstream fsOut("studentDB2.txt");
+
+void toFile(People& p) {
+    fsOut << p << endl;
+}
